@@ -1,8 +1,8 @@
 ﻿#Required Variables
 $currentDate = Get-Date
 $expirationDate = $currentDate.AddDays(30)
-$teamsID = "2e47cff8-ae0a-4f78-a8ba-ebb399a3229b"
-$channelID = "19:c01f77055c674bc3bc44344daa2ef5f4@thread.tacv2"
+$teamsID = ""
+$channelID = ""
 
 #Get all applications
 $Applications = Get-MgApplication | Where-Object { $_.PasswordCredentials.Count -gt 0 }
@@ -48,11 +48,11 @@ foreach ($app in $Applications) {
 	                mentions = @(
 		                @{
 			                id = 0
-			                mentionText = "Desktop Supp"
+			                mentionText = "Team Name"
 			                mentioned = @{
 				                conversation = @{
-					                id = "19:037276c57ed542b8a4d450fc4e1a110c@thread.tacv2"
-					                displayName = "Desktop Supp"
+					                id = ""
+					                displayName = "Team Supp"
 					                conversationIdentityType = "channel"
 				                }
 			                }
@@ -91,11 +91,11 @@ foreach ($app in $Applications) {
 	                mentions = @(
 		                @{
 			                id = 0
-			                mentionText = "Desktop Supp"
+			                mentionText = "Team Name"
 			                mentioned = @{
 				                conversation = @{
-					                id = "19:037276c57ed542b8a4d450fc4e1a110c@thread.tacv2"
-					                displayName = "Desktop Supp"
+					                id = ""
+					                displayName = "Team"
 					                conversationIdentityType = "channel"
 				                }
 			                }
@@ -153,11 +153,11 @@ foreach ($Sapp in $appsWithCertificates) {
 	                    mentions = @(
 		                    @{
 			                    id = 0
-			                    mentionText = "Desktop Supp"
+			                    mentionText = "Team"
 			                    mentioned = @{
 				                    conversation = @{
-					                    id = "19:037276c57ed542b8a4d450fc4e1a110c@thread.tacv2"
-					                    displayName = "Desktop Supp"
+					                    id = "Team"
+					                    displayName = "Team"
 					                    conversationIdentityType = "channel"
 				                    }
 			                    }
@@ -198,11 +198,11 @@ foreach ($Sapp in $appsWithCertificates) {
 	                mentions = @(
 		                @{
 			                id = 0
-			                mentionText = "Desktop Supp"
+			                mentionText = "Team"
 			                mentioned = @{
 				                conversation = @{
-					                id = "19:037276c57ed542b8a4d450fc4e1a110c@thread.tacv2"
-					                displayName = "Desktop Supp"
+					                id = "Team"
+					                displayName = "Team"
 					                conversationIdentityType = "channel"
 				                }
 			                }
